@@ -1,0 +1,120 @@
+# Generate the HTML and CSS code for the YardBoss landing page
+html_code = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YardBoss - Secure Truck Parking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1556740749-887f6717d7e4') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .hero .cta-button {
+            background-color: #3366ff;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            font-size: 1em;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: white;
+            margin-bottom: 10px;
+        }
+        .features {
+            list-style: none;
+            padding: 0;
+            font-size: 1.1em;
+        }
+        .features li {
+            margin: 10px 0;
+        }
+        .contact, .about, .locations {
+            background-color: #fff;
+        }
+        .footer {
+            background-color: #222;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .footer img {
+            margin-top: 20px;
+            max-width: 150px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>Secure Truck Parking, Built for Business.</h1>
+        <p>YardBoss offers private, secure commercial lots for truck fleets, day cabs, and trailers.</p>
+        <a href="#contact" class="cta-button">Reserve Your Spot</a>
+    </div>
+
+    <div class="section">
+        <ul class="features">
+            <li>✅ 24/7 Access</li>
+            <li>✅ Security Cameras + Gated Entry</li>
+            <li>✅ Monthly + Long-Term Rates</li>
+            <li>✅ Easy Highway Access</li>
+            <li>✅ Zoned for Commercial Truck Parking</li>
+        </ul>
+    </div>
+
+    <div class="section locations">
+        <h2>Available Locations</h2>
+        <p><strong>Now Leasing: Atlanta, GA</strong></p>
+        <p>Secure 1+ acre yard just off I-285</p>
+        <p><a href="mailto:info@yardbosslots.com">Contact us</a> for availability and pricing.</p>
+    </div>
+
+    <div class="section about">
+        <h2>About YardBoss</h2>
+        <p>YardBoss provides turnkey truck parking solutions on clean, zoned commercial land.
+           Whether you're a fleet manager or an owner-operator, we keep your rigs secure and accessible—no hassle, no HOA headaches.</p>
+    </div>
+
+    <div class="section contact" id="contact">
+        <h2>Contact</h2>
+        <p>📧 <a href="mailto:info@yardbosslots.com">info@yardbosslots.com</a></p>
+        <p>📞 <a href="tel:+11234567890">(123) 456-7890</a></p>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 YardBoss. All rights reserved.</p>
+        <img src="YardBoss_Logo.png" alt="YardBoss Logo">
+    </div>
+
+</body>
+</html>
+"""
+
+# Save HTML file
+html_file_path = "/mnt/data/YardBoss_Landing_Page.html"
+with open(html_file_path, "w") as f:
+    f.write(html_code)
+
+html_file_path
